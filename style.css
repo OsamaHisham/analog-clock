@@ -1,0 +1,274 @@
+/* ===== General Properties ====*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Main Content Properties (Clock 1) ====*/
+
+.clock-1-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #0e191f;
+  display: none;
+}
+
+.clock-1 {
+  width: 370px;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/clock.png);
+  background-size: cover;
+  border: 4px solid #0e191f;
+  border-radius: 50%;
+  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+    inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.5),
+    inset 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+.clock-1::before {
+  content: "";
+  background: #fff;
+  /* position: absolute; */
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 1000000;
+}
+
+.clock-1 .hours-1,
+.clock-1 .minutes-1,
+.clock-1 .seconds-1 {
+  position: absolute;
+}
+
+.clock-1 .hours-1,
+.hrs-1 {
+  width: 160px;
+  height: 160px;
+  /* background: red; */
+}
+
+.clock-1 .minutes-1,
+.min-1 {
+  width: 190px;
+  height: 190px;
+  /* background: white; */
+}
+
+.clock-1 .seconds-1,
+.sec-1 {
+  width: 230px;
+  height: 230px;
+  /* background: white; */
+}
+
+.hrs-1,
+.min-1,
+.sec-1 {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  border-radius: 50%;
+}
+
+.hrs-1::before {
+  content: "";
+  position: absolute;
+  background: rgb(199, 29, 214);
+  width: 8px;
+  height: 80px;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+
+.min-1::before {
+  content: "";
+  position: absolute;
+  background: rgb(235, 235, 235);
+  width: 4px;
+  height: 90px;
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+}
+
+.sec-1::before {
+  content: "";
+  position: absolute;
+  background: rgb(235, 235, 235);
+  width: 2px;
+  height: 140px;
+  z-index: 12;
+  border-radius: 6px 6px 0 0;
+}
+
+/* ===== Main Content Properties (Clock 2) ====*/
+
+.clock-2-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.clock-2 {
+  width: 370px;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/clock.png);
+  background-size: cover;
+  background-color: white;
+  border: 20px solid whitesmoke;
+  border-radius: 50%;
+  box-shadow: inset 0 0 30px rgba(0,0,0,0.2),
+              0 20px 20px rgba(0, 0, 0, 0.2),
+              0 0 0 4px rgba(255, 255, 255, 1);
+}
+.clock-2::before {
+  content: "";
+  background: #818181;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 1000000;
+}
+
+.clock-2 .hours-2, 
+.clock-2 .minutes-2, 
+.clock-2 .seconds-2 {
+  position: absolute;
+} 
+
+.clock-2 .hours-2,  
+.hrs-2 {
+  width: 160px;
+  height: 160px;
+}
+
+.clock-2 .minutes-2,  
+.min-2 {
+  width: 190px;
+  height: 190px;
+}
+
+.clock-2 .seconds-2,  
+.sec-2 {
+  width: 230px;
+  height: 230px;
+}
+
+.hrs-2,
+.min-2,
+.sec-2 {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  border-radius: 50%;
+}
+
+.hrs-2::before {
+  content: "";
+  position: absolute;
+  background: #818181;
+  width: 8px;
+  height: 80px;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+
+.min-2::before {
+  content: "";
+  position: absolute;
+  background: #dadada;
+  width: 4px;
+  height: 90px;
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+}
+
+.sec-2::before {
+  content: "";
+  position: absolute;
+  background: rgb(255, 72, 72);
+  width: 2px;
+  height: 140px;
+  z-index: 12;
+  border-radius: 6px 6px 0 0;
+}
+
+
+/* ===== toggle for mode ====*/
+
+.toggle {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color:rgb(43, 42, 42);
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
+}
+
+

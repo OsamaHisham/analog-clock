@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Clock</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Toggle button -->
+    <div class="toggle"> 
+      <input type="checkbox" class="checkbox" id="checkbox">
+      <label for="checkbox" class="label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class='ball'> </div>
+      </label>
+    </div>
+
+    <!-- Clock 1: -->
+    <div class="clock-1-wrapper">
+      <div class="clock-1">
+        <div class="hours-1">
+          <div class="hrs-1" id="hrs-1"></div>
+        </div>
+        <div class="minutes-1">
+          <div class="min-1" id="min-1"></div>
+        </div>
+        <div class="seconds-1">
+          <div class="sec-1" id="sec-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clock 2: -->
+    <div class="clock-2-wrapper">
+      <div class="clock-2">
+        <div class="hours-2">
+          <div class="hrs-2" id="hrs-2"></div>
+        </div>
+        <div class="minutes-2">
+          <div class="min-2" id="min-2"></div>
+        </div>
+        <div class="seconds-2">
+          <div class="sec-2" id="sec-2"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
